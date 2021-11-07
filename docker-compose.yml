@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  php:
+    image: php:7.4-fpm-alpine
+    volumes:
+      - ./:/app
+    working_dir: /app
+
+  composer:
+    image: composer:2
+    volumes:
+      - ./:/app
+    command: install
