@@ -23,6 +23,7 @@
         "slim/psr7": "^1.5"
     },
     "require-dev": {
+        "cebe/php-openapi": "^1.5",
         "codeception/codeception": "^4.1",
         "codeception/module-asserts": "^1.3",
         "codeception/module-rest": "dev-coverage",

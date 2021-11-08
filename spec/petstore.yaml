@@ -96,8 +96,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Pet'
-        default:
-          description: unexpected error
+        '404':
+          description: pet not found
           content:
             application/json:
               schema:

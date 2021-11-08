@@ -6,20 +6,21 @@ namespace MeetMatt\RestCoverage\Test\Suite\Functional;
 
 use MeetMatt\RestCoverage\Test\Support\FunctionalTester;
 
-class HomeCest
+class GetPetsCest
 {
-    public function getHomeReturnsBob(FunctionalTester $I): void
+    public function getReturnsListOfPets(FunctionalTester $I): void
     {
         $I->haveHttpHeader('Accept', 'application/json');
 
-        $I->sendGet('/');
+        $I->sendGet('/pets', ['tags' => ['cat'], 'limit' => 1]);
 
         $I->seeResponseCodeIs(200);
         $I->seeResponseContainsJson(
             [
-                'name' => 'Bob',
-                'age'  => 40
-            ]
+                'id' => 3,
+                'name' => 'Simba',
+                'tag' => 'cat'
+            ],
         );
     }
 }

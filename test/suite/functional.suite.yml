@@ -5,6 +5,7 @@ modules:
     - Asserts
     - REST:
         depends: DoclerLabs\CodeceptionSlimModule\Module\Slim
+        openApiSpec: spec/petstore.yaml
 
   config:
     DoclerLabs\CodeceptionSlimModule\Module\Slim:
