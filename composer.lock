@@ -1162,7 +1162,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/meetmatt/module-rest.git",
-                "reference": "dcd1354813686a8ed2c237ce261d6501a3df2ee6"
+                "reference": "c77515654b3c9a5d0915d6a99a3d03fc7e4ebd32"
             },
             "require": {
                 "codeception/codeception": "^4.0",
@@ -1198,7 +1198,7 @@
                 "codeception",
                 "rest"
             ],
-            "time": "2021-11-08T22:13:53+00:00"
+            "time": "2021-11-10T19:30:26+00:00"
         },
         {
             "name": "codeception/phpunit-wrapper",

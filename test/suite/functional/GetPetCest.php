@@ -12,7 +12,7 @@ class GetPetCest
     {
         $I->haveHttpHeader('Accept', 'application/json');
 
-        $I->sendGet('/pets/1');
+        $I->sendGet('/api/pets/1');
 
         $I->seeResponseCodeIs(200);
         $I->seeResponseContainsJson(
@@ -28,7 +28,7 @@ class GetPetCest
     {
         $I->haveHttpHeader('Accept', 'application/json');
 
-        $I->sendGet('/pets/5');
+        $I->sendGet('/api/pets/5');
 
         $I->seeResponseCodeIs(404);
         $I->seeResponseContainsJson(

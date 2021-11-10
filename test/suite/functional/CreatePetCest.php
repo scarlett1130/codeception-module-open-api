@@ -12,7 +12,7 @@ class CreatePetCest
     {
         $I->haveHttpHeader('Accept', 'application/json');
 
-        $I->sendPost('/pets', [
+        $I->sendPost('/api/pets', [
             'name' => 'Hachiko',
             'tag'  => 'dog'
         ]);
