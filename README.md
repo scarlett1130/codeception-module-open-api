@@ -1,5 +1,5 @@
 # Codeception REST module API spec coverage example Slim v4 application
 
-Module: [https://github.com/Codeception/module-rest/compare/master...meetmatt:coverage?expand=1](preview).  
+Module: [preview](https://github.com/Codeception/module-rest/compare/master...meetmatt:coverage?expand=1).  
 
-See [./output_example](output example).  
+See [report example](./report_example). 
